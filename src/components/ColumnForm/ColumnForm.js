@@ -1,14 +1,16 @@
 import styles from './ColumnForm.module.scss';
 import Button from '../Button/Button';
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 
 const ColumnForm = props => {
         const [title, setTitle] = useState(''); //dodaje do komponentu nowy stan - useState, o wartosci pustego stringa, dostep do wartosci tego stanu bedzie dostepny pod stala value, a funckja do modyfikacji pod stala setValue
         const [icon, setIcon ] = useState('');
+        const dispatch = useDispatch();
 
         const handleSubmit = e => {
             e.preventDefault();
-            props.action({ title: title, icon: icon });
+            dispatch({ type: 'ADD_COLUMN', payload: { title, icon } });
             setTitle('');
             setIcon('');
         }
