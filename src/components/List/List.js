@@ -7,7 +7,6 @@ import { useSelector } from 'react-redux';
 const List = () => {
 
     const columns = useSelector(state => getColumnByList(state, 1));
-    const lists = useSelector(state => state.lists);
     const listData = useSelector(state => getListById(state, 1))
 
     return (
