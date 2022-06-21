@@ -14,15 +14,15 @@ const initialState = {
       },
       {
         id: 3,
-        listId: 1,
         title: 'Games',
         icon: 'gamepad',
+        listId: 1,
       },
       {
         id: 4,
-        listId: 2,
         title: 'Test listy 2',
         icon: 'test',
+        listId: 2,
       }
 
     ],
@@ -33,7 +33,8 @@ const initialState = {
       { id: 3, columnId: 2, title: 'Harry Potter', isFavorite: false },
       { id: 4, columnId: 2, title: 'Star Wars', isFavorite: false },
       { id: 5, columnId: 3, title: 'The Witcher', isFavorite: false },
-      { id: 6, columnId: 3, title: 'Skyrim', isFavorite: false }
+      { id: 6, columnId: 3, title: 'Skyrim', isFavorite: false },
+      { id: 7, columnId: 4, title: 'Hawk', isFavorite: true},
     ],
   
     searchString: '',
@@ -42,14 +43,14 @@ const initialState = {
       {
         id: '1',
         title: 'Things to do...',
-        description: 'Interesting things I want to check out'
+        description: 'Interesting things I want to check out',
       },
      {
         id: '2',
         title: 'Test list',
-        description: 'Lorem Ipsum'
+        description: 'Lorem Ipsum',
      }
-   ]
+   ],
 
   };
   
