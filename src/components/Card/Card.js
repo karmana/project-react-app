@@ -20,11 +20,11 @@ const Card = props => {
     return (
         <li className={styles.card}> {props.title}  
             <div>
-                <button onClick={toggle}>
-                    <span className={clsx(' fa fa-star-o', props.isFavorite && styles.isFavorite)}></span>
+                <button onClick={toggle} className={clsx(styles.button, props.isFavorite && styles.isActive)}>
+                    <span className='fa fa-star-o'></span>
                 </button>
-                <button onClick={handleRemove}>
-                    <span className={'fa fa-trash'}></span>
+                <button onClick={handleRemove} className={styles.button}>
+                    <span className='fa fa-trash'></span>
                  </button>
             </div>
         </li>

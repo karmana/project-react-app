@@ -11,7 +11,7 @@ const ListForm = props => {
 
         const handleSubmit = e => {
             e.preventDefault();
-            dispatch(addList({ title, decription }));
+            dispatch(addList({ title, decription, id: props.listId }));
             setTitle('');
             setDescription('');
         }

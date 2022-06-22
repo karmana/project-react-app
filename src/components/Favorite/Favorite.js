@@ -19,7 +19,7 @@ const Favorite = () => {
             <div className={styles.favorites}>
                 <PageTitle>Favorite</PageTitle>
                 <ul className={styles.column}>
-                {cards.map(card => <Card key={card.id}  title={card.title} isFavorite={card.isFavorite} />)} 
+                {cards.map(card => <Card key={card.id} id={card.id}  title={card.title} isFavorite={card.isFavorite} />)}
                 </ul>
             </div>
     )

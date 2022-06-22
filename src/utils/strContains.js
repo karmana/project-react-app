@@ -1,5 +1,5 @@
 const strContans = (firstStr, secondStr) => {
-    if (firstStr.toLowerCase().includes(secondStr.toLowerCase()))
+    if (firstStr.toLowerCase().includes(secondStr.toString().toLowerCase()))
         return true
         else
         return false
